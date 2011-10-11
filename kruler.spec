@@ -5,7 +5,6 @@ Release: 1
 Epoch: 2
 Group: Graphical desktop/KDE
 License: GPLv2 GFDL
-Suggests: kruler-handbook
 URL: http://www.kde.org/applications/graphics/kruler
 Source: ftp://ftp.kde.org/pub/kde/stable/%version/src/%name-%version.tar.bz2
 BuildRequires: kdelibs4-devel >= 2:%{version}
