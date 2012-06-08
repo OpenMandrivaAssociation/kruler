@@ -1,6 +1,6 @@
 Name: kruler
 Summary: KDE Screen Ruler
-Version: 4.8.3
+Version: 4.8.4
 Release: 1
 Epoch: 2
 Group: Graphical desktop/KDE
