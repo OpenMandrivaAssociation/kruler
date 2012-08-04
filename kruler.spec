@@ -1,12 +1,12 @@
 Name:		kruler
 Summary:	KDE Screen Ruler
-Version:	4.8.97
-Release:	1
+Version: 4.9.0
+Release: 1
 Epoch:		2
 Group:		Graphical desktop/KDE
 License:	GPLv2 GFDL
 URL:		http://www.kde.org/applications/graphics/kruler
-Source:		ftp://ftp.kde.org/pub/kde/unstable/%{version}/src/%{name}-%{version}.tar.xz
+Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	kdelibs4-devel
 
 %description
