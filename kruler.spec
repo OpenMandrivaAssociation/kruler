@@ -27,10 +27,11 @@ Features :
 
 %files
 %doc %{_docdir}/HTML/en/%{name}                                                                        
-%{_bindir}/kruler                                                                                      
-%{_datadir}/applications/kde4/kruler.desktop                                                           
-%{_datadir}/apps/kruler                                                                                
+%{_bindir}/kruler     
+%{_bindir}/knotifications5/kruler.notifyrc
+%{_datadir}/applications/org.kde.kruler.desktop                                                          
 %{_iconsdir}/*/*/*/kruler*
+%{_datadir}/kruler/sounds/move.wav
 
 #----------------------------------------------------------------------
 
