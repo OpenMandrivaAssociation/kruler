@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   kruler-15.08.0.tar.xz: bcf9afa2ed24c39d00b8d60778149bbfcd375548
+sources:
+  kruler-15.08.1.tar.xz: 0bb8d04234261628a91ecb4c4870cf83d145f21e
