@@ -1,6 +1,6 @@
 Name:		kruler
 Summary:	KDE Screen Ruler
-Version:	15.12.1
+Version:	15.12.2
 Release:	1
 Epoch:		2
 Group:		Graphical desktop/KDE
