@@ -1,12 +1,13 @@
+%define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 Name:		kruler
 Summary:	KDE Screen Ruler
-Version:	16.12.2
+Version:	17.04.0
 Release:	1
 Epoch:		2
 Group:		Graphical desktop/KDE
 License:	GPLv2 GFDL
 URL:		http://www.kde.org/applications/graphics/kruler
-Source:		http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt5Core)
 BuildRequires:	cmake(Qt5Widgets)
@@ -25,13 +26,13 @@ Features :
     - Change the orientation of the ruler
     - Change the color, transparency and font of the ruler
 
-%files
-%doc %{_docdir}/HTML/en/%{name}                                                                        
+%files -f %{name}.lang
 %{_bindir}/kruler     
 %{_datadir}/knotifications5/kruler.notifyrc
 %{_datadir}/applications/org.kde.kruler.desktop                                                          
 %{_iconsdir}/*/*/*/kruler*
 %{_datadir}/kruler/sounds/move.wav
+%{_datadir}/metainfo/*.appdata.xml
 
 #----------------------------------------------------------------------
 
@@ -44,3 +45,4 @@ Features :
 
 %install
 %ninja_install -C build
+%find_lang %{name} --with-html
