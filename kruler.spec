@@ -1,7 +1,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 Name:		kruler
 Summary:	KDE Screen Ruler
-Version:	17.04.2
+Version:	17.08.0
 Release:	1
 Epoch:		2
 Group:		Graphical desktop/KDE
