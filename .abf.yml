@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   kruler-17.12.1.tar.xz: 0b6f13b70e5a434cfabd0a304725e573b9bafa0e
+sources:
+  kruler-17.12.2.tar.xz: 67fd99994c1d1dc59d20fd382f13c52f2d5dba77
