@@ -11,12 +11,13 @@ Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt5Core)
 BuildRequires:	cmake(Qt5Widgets)
+BuildRequires:	cmake(Qt5X11Extras)
 BuildRequires:  cmake(KF5DocTools)                                                             
 BuildRequires:  cmake(KF5I18n)                                                                 
 BuildRequires:  cmake(KF5Notifications)                                                        
 BuildRequires:  cmake(KF5WindowSystem)                                                         
 BuildRequires:  cmake(KF5XmlGui)  
-
+BuildRequires:	cmake(X11)
 
 %description
 KRuler displays on screen a ruler measuring pixels.
