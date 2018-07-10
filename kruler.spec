@@ -2,7 +2,7 @@
 Name:		kruler
 Summary:	KDE Screen Ruler
 Version:	 18.04.2
-Release:	1
+Release:	2
 Epoch:		2
 Group:		Graphical desktop/KDE
 License:	GPLv2 GFDL
