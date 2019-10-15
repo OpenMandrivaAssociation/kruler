@@ -8,6 +8,7 @@ Group:		Graphical desktop/KDE
 License:	GPLv2 GFDL
 URL:		http://www.kde.org/applications/graphics/kruler
 Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
+Patch0:		kruler-19.08.2-qt-5.14.patch
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt5Core)
 BuildRequires:	cmake(Qt5Widgets)
@@ -38,7 +39,7 @@ Features :
 #----------------------------------------------------------------------
 
 %prep
-%setup -q
+%autosetup -p1
 %cmake_kde5
 
 %build
