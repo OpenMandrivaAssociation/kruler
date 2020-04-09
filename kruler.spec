@@ -2,7 +2,7 @@
 Name:		kruler
 Summary:	KDE Screen Ruler
 Version:	20.03.90
-Release:	1
+Release:	2
 Epoch:		2
 Group:		Graphical desktop/KDE
 License:	GPLv2 GFDL
