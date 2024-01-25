@@ -15,6 +15,7 @@ BuildRequires:  cmake(KF6I18n)
 BuildRequires:  cmake(KF6Notifications)                                                        
 BuildRequires:  cmake(KF6WindowSystem)                                                         
 BuildRequires:  cmake(KF6XmlGui)  
+BuildRequires:	cmake(KF6StatusNotifierItem)
 BuildRequires:	cmake(X11)
 
 %description
