@@ -1,8 +1,8 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 Name:		plasma6-kruler
 Summary:	KDE Screen Ruler
-Version:	24.01.90
-Release:	2
+Version:	24.01.95
+Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2 GFDL
 URL:		http://www.kde.org/applications/graphics/kruler
