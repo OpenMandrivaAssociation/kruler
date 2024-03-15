@@ -5,7 +5,7 @@
 Name:		plasma6-kruler
 Summary:	KDE Screen Ruler
 Version:	24.02.0
-Release:	%{?git:0.%{git}.}1
+Release:	%{?git:0.%{git}.}2
 Group:		Graphical desktop/KDE
 License:	GPLv2 GFDL
 URL:		http://www.kde.org/applications/graphics/kruler
