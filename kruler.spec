@@ -6,7 +6,7 @@ Release:	1
 Epoch:		2
 Group:		Graphical desktop/KDE
 License:	GPLv2 GFDL
-URL:		http://www.kde.org/applications/graphics/kruler
+URL:		https://www.kde.org/applications/graphics/kruler
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt5Core)
