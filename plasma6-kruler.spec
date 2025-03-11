@@ -25,6 +25,7 @@ BuildRequires:  cmake(KF6XmlGui)
 BuildRequires:	cmake(KF6StatusNotifierItem)
 BuildRequires:	cmake(KF6Crash)
 BuildRequires:	cmake(X11)
+BuildRequires:	pkgconfig(xkbcommon)
 
 %description
 KRuler displays on screen a ruler measuring pixels.
