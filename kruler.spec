@@ -4,7 +4,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 Name:		kruler
 Summary:	KDE Screen Ruler
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 Group:		Graphical desktop/KDE
 License:	GPLv2 GFDL
@@ -27,6 +27,11 @@ BuildRequires:	cmake(KF6Crash)
 BuildRequires:	cmake(X11)
 BuildRequires:	pkgconfig(xkbcommon)
 
+%rename plasma6-kruler
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
 %description
 KRuler displays on screen a ruler measuring pixels.
 Features :
@@ -35,25 +40,10 @@ Features :
     - Change the orientation of the ruler
     - Change the color, transparency and font of the ruler
 
-%files -f kruler.lang
+%files -f %{name}.lang
 %{_bindir}/kruler     
 %{_datadir}/knotifications6/kruler.notifyrc
 %{_datadir}/applications/org.kde.kruler.desktop                                                          
 %{_iconsdir}/*/*/*/kruler*
 %{_datadir}/kruler/sounds/move.wav
 %{_datadir}/metainfo/*.appdata.xml
-
-#----------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n kruler-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja -C build
-
-%install
-%ninja_install -C build
-%find_lang kruler --with-html
