@@ -5,7 +5,7 @@
 Name:		kruler
 Summary:	KDE Screen Ruler
 Version:	26.08.1
-Release:	%{?git:0.%{git}.}1
+Release:	%{?git:0.%{git}.}2
 Group:		Graphical desktop/KDE
 License:	GPLv2 GFDL
 URL:		https://www.kde.org/applications/graphics/kruler
